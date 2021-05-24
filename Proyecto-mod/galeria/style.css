@@ -1,0 +1,90 @@
+:root {
+  --bg-blue: #0860a8;
+  --black: #000000;
+  --bg-grey: #808184;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-nav img {
+  width: 100px;
+}
+
+div h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.gallery {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.gallery-image {
+  margin: 0;
+}
+
+.gallery-image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.gallery-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.gallery:hover .gallery-overlay {
+  display: flex;
+}
+
+.gallery-comments {
+  font-size: small;
+  font-weight: lighter;
+}
+
+footer {
+  background-color: var(--bg-blue);
+}
+
+.button-rollerderby {
+  color: var(--bg-blue);
+}
+
+@media (min-width: 720px) {
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

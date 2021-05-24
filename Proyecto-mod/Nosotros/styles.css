@@ -1,0 +1,48 @@
+:root {
+  --bg-blue: #0860a8;
+  --black: #000000;
+  --bg-grey: #808184;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-nav img {
+  width: 100px;
+}
+
+.container-fluid {
+  background-color: #e7eef4;
+  min-width: 300px;
+}
+
+.player-card {
+  padding: 5px;
+}
+
+#card {
+  width: 310px;
+  height: 465px;
+  background: orange;
+}
+
+footer {
+  background-color: var(--bg-blue);
+}
+
+.button-rollerderby {
+  color: var(--bg-blue);
+}
+
+#cards{
+  border: 2px solid gray;
+  box-shadow: 2px 2px 10px #666;
+
+}
+
+#titulo {
+  color: #0860a8;
+  font-weight: bold;
+}
